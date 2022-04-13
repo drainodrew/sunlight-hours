@@ -1,0 +1,25 @@
+ideas: 
+
+- create a conditonal that changes the intensity of background color based upon
+how many hours of sunlight the city or country gets 
+
+in cities and country need to have an alert for if you submit somethign that isn't a found country or city 
+
+
+
+okay decide what you are going to do .
+
+
+the concept is to have an input form. 
+when you put the name of a city in the form, it displays the data of that city. 
+
+so, currently, i have an api call that pulls in all the objects... ie all the cities. 392 of them. 
+
+so far i have been trying to do a map. what i will actually need to do is a search array method. 
+
+so, i need it so that when you submit a city in the form, it filters through the array and then displays that that city. 
+
+   { {cityLight.map((city, index) => (
+        <p key={index}>{city}</p>
+      )
+     )} 

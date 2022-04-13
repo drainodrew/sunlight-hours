@@ -1,4 +1,4 @@
-import Loading from './Loading'
+import Loading from './Loading/Loading'
 import React, { useState, useEffect } from 'react'
 import {useParams} from 'react-router-dom'
 import axios from "axios"
@@ -37,7 +37,7 @@ export default function Cities(props) {
        <h1>Enter a city!</h1>
         <input
           type="text"
-          id="props"
+          id="props.id"
           onChange={handleInput}
           value={input}
       />

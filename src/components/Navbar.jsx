@@ -9,6 +9,7 @@ function Navbar() {
       <nav>
         <Link to='/'>Home</Link>
         <Link to='/cities-form'>Cities</Link>
+        <Link to='/test'>Test</Link>
       </nav>
     </header>
   )
