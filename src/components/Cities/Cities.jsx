@@ -1,8 +1,5 @@
-//import Loading from './Loading/Loading'
 import React, { useState, useEffect } from 'react'
-//import {useParams} from 'react-router-dom'
 import axios from "axios"
-//import App from '../App'
 
 
 
@@ -39,7 +36,8 @@ export default function Cities(props) {
   })
   const handleSubmit = (event) => {
     event.preventDefault();
-    }
+  }
+  
   return (
     <>
 
