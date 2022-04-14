@@ -1,71 +1,26 @@
-# Getting Started with Create React App
+# Hours of Sunlight by City 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation 
 
-## Available Scripts
+### 1. git clone repository 
 
-In the project directory, you can run:
+### 2. npm install 
 
-### `npm start`
+## API 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project uses an API that stores the amount of hours different countries and cities receieve on a monthly and annual basis. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Link to API heroku: https://sunlightbycities-api.herokuapp.com/sunlight
 
-### `npm test`
+Link to API gituhub repository: https://github.com/MediogreCoder/SunlightAPI
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## React 
+This project was built with react. 
 
-### `npm run build`
+## Functionality 
+The "cities" tab is 90% of the project. It provides an input field where users can type a city name. If they city is in the database, it will display the total amount of sunlight it receives in a year. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Future 
+I would like to add dynamic styling, so that the background color changes in relation to the percentile the cities is in (e.g. if a city is in the 90th percentile, the background will turn red). 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# sunlight-hours
+I would also like to implement better error messages. For example, if someone types a city that is not in the database, it should let the user know. 
