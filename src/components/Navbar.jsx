@@ -7,8 +7,9 @@ function Navbar() {
     <header>
       <h1 className='home'>Sunlight Hours</h1>
       <nav>
-        <Link to='/'>Home</Link>
-        <Link to='/cities-form'>Cities</Link>
+        <Link to='/'><h2 className="link">Home</h2></Link>
+        <Link to='/cities-form'><h2 className="link">Cities</h2></Link>
+        <Link to='/cities-list'><h2 className="link">List of Cities</h2></Link>
       </nav>
     </header>
   )

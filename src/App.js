@@ -4,7 +4,7 @@ import Home from "./components/Home.jsx";
 import Loading from './components/Loading/Loading'
 import Cities from './components/Cities/Cities'
 import Navbar from './components/Navbar';
-import Test from './components/test'
+import List from './components/List'
 //link and route --> you can't have one without the other 
   //routes you only use one time (when you define it)
 
@@ -18,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cities-form" element={<Cities />} />
+          <Route path="/cities-list" element={<List />} />
         </Routes>
       </main>
     </>
