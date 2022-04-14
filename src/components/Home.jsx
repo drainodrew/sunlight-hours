@@ -17,7 +17,7 @@ console.log(dataList)
 
   return (
     <>
-      <h2>Have you wondered how many hours of sunlight different cities and countries get?</h2>
+      <h2 className="homeh2">Have you wondered how many hours of sunlight different cities get?</h2>
       <h3>Probably not. But now you have, and we've got the answers.</h3>
     
     </>

@@ -5,11 +5,10 @@ import {Link} from 'react-router-dom'
 function Navbar() {
   return (
     <header>
-      <h1>Sunlight Hours</h1>
+      <h1 className='home'>Sunlight Hours</h1>
       <nav>
         <Link to='/'>Home</Link>
         <Link to='/cities-form'>Cities</Link>
-        <Link to='/test'>Test</Link>
       </nav>
     </header>
   )

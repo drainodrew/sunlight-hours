@@ -24,7 +24,6 @@ export default function Cities(props) {
   }, []);
 
   console.log(cityLight)
-  console.log(typeof cityLight)
 
   //i'll need to map thru the dataset and make a conditional that only sets cities if equals the name to a city in the array
   const handleCities = (event) => {
@@ -33,45 +32,38 @@ export default function Cities(props) {
       setCities(event.target.value)
     }
   }
-  const handleMatch = (e) => {
-    e.preventDefault();
 
-  }
+  const filtering = cityLight.filter((city) => {
+    if (city.City === cities) 
+    return city;
+  })
   const handleSubmit = (event) => {
     event.preventDefault();
     }
-   
   return (
     <>
+
     <form onSubmit={handleSubmit}>
        <h1>Enter a city!</h1>
         <input
+          placeholder='type city name here :)'
           type="text"
           id="cities"
           onChange={handleCities}
           value={cities}
         /> 
-        {cityLight.map((city, index) => (
+              </form>
+      <br />
+      <br />
+      <div>
+        {filtering.map((city, index) => (
           <p
-            key={index}
-            onChange={handleMatch}
-            className={city.City === cities}
-          />
+            key={index}>
+            {city.City} <br />
+            Total hours of sunlight: {city.Year}
+          </p>
         ))}
-        <button type="submit">Submit</button>
-      </form>
-      <br />
-      <br />
-      <section>
-      
-      
-     </section>   
+      </div> 
       </>
   )
 }
-
-  
-
-  
-
-

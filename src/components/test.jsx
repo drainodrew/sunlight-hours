@@ -19,18 +19,30 @@ let Test = (props) => {
     apiCityCall();
   }, []);
   
-  const sorting = testData.filter((city) => {
-    if (city.City === "Sofia")
-      return city;
-    return null;
+  
+  console.log(testData.Year)
+  let years = testData.map((city) => {
+    console.log(typeof city.Year)
+    return city.Year
   })
+  //let cityNames = testData.map((city) => city.City)
+  years.sort();
+  console.log(years)
+  // mvlet sortedHours = [{}];
+  // cityNames.forEach((city, index) => {
+  //   sortedHours[city] = years[index]
+  // })
+
+  // sortedHours.sort = (x, y) => {
+  //     return x.salary - y.salary;
+  // });
+
+  // }
+  // console.table(sortedHours)
   return (
     <>
-      <div>{sorting.map((city) => (
-        <p>{city.City}
-          </p>))}
-      </div>
-
+      
+        
       </>
   )
 }

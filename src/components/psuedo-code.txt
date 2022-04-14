@@ -23,3 +23,23 @@ so, i need it so that when you submit a city in the form, it filters through the
         <p key={index}>{city}</p>
       )
      )} 
+
+
+
+     {filtering.map((city, index) => (
+        <body
+          key={index}
+          style={{
+            backgroundColor: city.Year < 2534 ? '#ff9c59'
+              : city.Year < 3062 ? '#e25822'
+                : city.Year < 5000 ? 'red'
+                  : "initial"
+          }}/> ))}       
+      
+
+              style={{
+              backgroundColor: city.Year < 2534 ? '#ff9c59'
+              : city.Year < 3062 ? '#e25822'
+                : city.Year < 5000 ? 'red'
+                  : "black"
+            }}
